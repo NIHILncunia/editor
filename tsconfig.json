@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "outDir": "./dist",
     "target": "ESNext",
     "useDefineForClassFields": true,
     "lib": [
@@ -17,17 +18,17 @@
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
+    "noEmit": false,
+    "declaration": true,
     "jsx": "react-jsx",
     "paths": {
       "@/*": [
         "./*"
-      ],
+      ]
     },
     "types": [
       "node",
       "vite/client",
-      "@emotion/react/types/css-prop"
     ]
   },
   "include": [

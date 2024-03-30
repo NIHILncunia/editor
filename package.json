@@ -1,23 +1,27 @@
 {
   "name": "@nihilncunia/editor",
-  "version": "1.0.0",
-  "description": "리액트 편하게 쓰려고 만든 템플릿. 타입스크립트 기본 지원. + vite 적용",
+  "private": false,
+  "version": "0.0.1",
+  "main": "dist/src/index.js",
+  "types": "dist/index.d.ts",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nihil-template/nihil-vite-react-template.git"
+    "url": "git+https://github.com/NIHILncunia/editor.git"
   },
   "bugs": {
-    "url": "https://github.com/nihil-template/nihil-vite-react-template/issues"
+    "url": "https://github.com/NIHILncunia/editor/issues"
   },
-  "homepage": "https://github.com/nihil-template/nihil-vite-react-template#readme",
+  "homepage": "https://github.com/NIHILncunia/editor#readme",
   "scripts": {
-    "serve": "npm run open && vite",
+    "serve": "vite",
     "build": "tsc && vite build",
-    "start:dev": "npm run open && vite preview",
-    "open": "start http://localhost:3000"
+    "start:dev": "vite preview",
+    "prepare": "rm -rf dist && mkdir dist && tsc"
   },
-  "keywords": [],
+  "keywords": [
+    "react", "editor", "nihilncunia"
+  ],
   "author": "NIHILncunia",
   "license": "MIT",
   "dependencies": {

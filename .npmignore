@@ -1,0 +1,10 @@
+node_modules/
+src/common
+src/entities
+src/features
+src/images
+src/pages
+src/shadcn
+public/
+tsconfig.json
+tsconfig.node.json

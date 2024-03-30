@@ -3,12 +3,14 @@ import { createJSONStorage, persist } from 'zustand/middleware';
 
 type CommonState = {
   test: string;
+  darkMode: boolean;
 };
 
 export const commonStore = create(
   persist<CommonState>(
     () => ({
       test: '',
+      darkMode: false,
     }),
     {
       name: 'project/common-state',
@@ -21,5 +23,11 @@ export const commonStore = create(
 export function setTest(value: string) {
   commonStore.setState({
     test: value,
+  });
+}
+
+export function setDarkMode(value: boolean) {
+  commonStore.setState({
+    darkMode: value,
   });
 }

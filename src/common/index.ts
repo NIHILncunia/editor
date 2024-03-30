@@ -34,7 +34,8 @@ export { Logo } from './layouts/Logo';
 // 스토어
 export {
   commonStore,
-  setTest
+  setTest,
+  setDarkMode
 } from './store/common.store';
 
 // utils
